@@ -20,9 +20,26 @@ namespace ProgPersona
         Persona persona;
         private void btnPersona_Click(object sender, EventArgs e)
         {
-            persona = new Persona(txtNombre.Text,Convert.ToInt64(txtDNI.Text),DateTime.Parse(txtFechaNac.Text));
 
-            MessageBox.Show("La persona a sido instanciada");
+            try
+            {
+                persona = new Persona(txtNombre.Text, Convert.ToInt32(txtDNI.Text), DateTime.Parse(txtFechaNac.Text));
+
+                int dni = persona.P_DNI;
+
+                if (dni.ToString().Length == 8)
+                {
+                    lbldni.Text = dni.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Documento debe tener 8 caracteres");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No se pueden ingresar letras");
+            }
         }
 
         private void btnEdad_Click(object sender, EventArgs e)

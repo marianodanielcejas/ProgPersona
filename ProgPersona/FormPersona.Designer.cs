@@ -38,6 +38,7 @@
             this.btnEdad = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.lblEdad = new System.Windows.Forms.Label();
+            this.lbldni = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -125,11 +126,20 @@
             this.lblEdad.Size = new System.Drawing.Size(0, 13);
             this.lblEdad.TabIndex = 9;
             // 
+            // lbldni
+            // 
+            this.lbldni.AutoSize = true;
+            this.lbldni.Location = new System.Drawing.Point(119, 277);
+            this.lbldni.Name = "lbldni";
+            this.lbldni.Size = new System.Drawing.Size(0, 13);
+            this.lbldni.TabIndex = 10;
+            // 
             // FormPersona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbldni);
             this.Controls.Add(this.lblEdad);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnEdad);
@@ -159,5 +169,6 @@
         private System.Windows.Forms.Button btnEdad;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblEdad;
+        private System.Windows.Forms.Label lbldni;
     }
 }

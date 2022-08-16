@@ -9,13 +9,13 @@ namespace Entidades
     public class Persona
     {
         private string Nombre;
-        private long DNI;
+        private int DNI;
         private DateTime FechaNacimiento;
         public Persona()
         {
 
         }
-        public Persona(string Nombre, long DNI, DateTime FechaNacimiento)
+        public Persona(string Nombre, int DNI, DateTime FechaNacimiento)
         {
             this.Nombre = Nombre;
             this.DNI = DNI;
@@ -27,7 +27,7 @@ namespace Entidades
             set { Nombre = value; }
             get { return Nombre; }
         }
-        public long P_DNI
+        public int P_DNI
         {
             set { DNI = value; }
             get { return DNI; }
